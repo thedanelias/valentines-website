@@ -51,65 +51,106 @@
                         <p>Picture of clock, some other valentines related stuff?</p>
                     </div>
                     <div id="step4" class="step">
-                        <h1>First Activity</h1>
-                        <p>DINNER!!!!!</p></br>
-                        <p>NGL, I can't make my mind up whether to go to a restaurant or do a 
-                            homecooked meal sort of thing sooo you can choose! (or we can flip a coin)</p>
-                        <form method="post">
-                            <input type="radio" id="yes" name="dinner" value="yes">
-                            <label for="yes">Restaurant</label></br>
-                            <input type="radio" id="no" name="dinner" value="no">
-                            <label for="no">Homecooked</label></br>
-                            <input type="radio" id="flip" name="dinner" value="flip">
-                            <label for="flip">Flip a coin!</label></br>
-                            <button type="submit" class="next">Next</button>
-                        </form>
-                    </div>
-                    <div id="step4a" class="step">
-                        <p>ADD FLIPPING A COIN MECHANICS</p>
-                    </div>
-                    <div id="step5" class="step">
-                        <h1>Cuisine of the most exquisite meal</h1>
-                        <p>I was thinking sushi but if that is not the vibe select an option</p>
-                        <form method="post">
-                            <input type="radio" id="it" name="cuisine" value="italian">
-                            <label for="it">Italian</label></br>
-                            <input type="radio" id="in" name="cuisine" value="indian">
-                            <label for="in">Indian</label></br>
-                            <input type="radio" id="ch" name="cuisine" value="chinese">
-                            <label for="ch">Chinese</label></br>
-                            <input type="radio" id="th" name="cuisine" value="thai">
-                            <label for="th">Thai</label></br>
-                            <input type="radio" id="jp" name="cuisine" value="japanese">
-                            <label for="jp">Japanese</label></br>
-                            <input type="radio" id="brg" name="cuisine" value="brg">
-                            <label for="brg">Gourmet Burgers</label></br>
-                            <button type="submit" class="next">Next</button>
-                        </form>
-                    </div>
-                    <div id="step6" class="step">
-                        <h1>Activity 2</h1>
-                        <p>KARAOKEEEEE ROOOOMMMMMMMMMMMM</p></br>
-                        <p>I've included a little snippet of me singing so you can practice</p><br>
-                        <p>If you are intimidated by my luscious and in-key vocals we can do a different activity</p>
-                        <form method="post">
-                            <input type="radio" id="kar" name="activity" value="karaoke">
-                            <label for="kar">Karaoke</label></br>
-                            <input type="radio" id="arc" name="activity" value="arcade">
-                            <label for="arc">Arcade</label></br>
-                            <input type="radio" id="bow" name="activity" value="bowling">
-                            <label for="bow">Bowling</label></br>
-                            <input type="radio" id="mini" name="activity" value="minigolf">
-                            <label for="mini">Minigolf</label></br>
-                            <input type="radio" id="sipp" name="activity" value="sipandpaint">
-                            <label for="sipp">Sip and paint</label></br>
-                            <input type="radio" id="axe" name="activity" value="axethrowing">
-                            <label for="axe">Axe Throwing</label></br>
-                            <label for="addown">Add your own: </label>
-                            <input type="text" id="addown" name="activity" placeholder="Activity"></br>
-                            <button type="submit" class="next">Next</button>
-                        </form>
-                    </div>
+    <h1>First Activity</h1>
+    <p>DINNER!!!!!</p>
+    <p>NGL, I can't make my mind up whether to go to a restaurant or do a homecooked meal sort of thing sooo you can choose! (or we can flip a coin)</p>
+    <form method="post">
+        <div class="radio-group">
+            <label class="radio-option">
+                <input type="radio" name="dinner" value="yes">
+                Restaurant
+            </label>
+            <label class="radio-option">
+                <input type="radio" name="dinner" value="no">
+                Homecooked
+            </label>
+            <label class="radio-option">
+                <input type="radio" name="dinner" value="flip">
+                Flip a coin!
+            </label>
+            <button type="submit" class="next">Next</button>
+        </div>
+    </form>
+</div>
+
+<div id="step4a" class="step">
+    <p>ADD FLIPPING A COIN MECHANICS</p>
+</div>
+
+<div id="step5" class="step">
+    <h1>Cuisine of the most exquisite meal</h1>
+    <p>I was thinking sushi but if that is not the vibe select an option</p>
+    <form method="post">
+        <div class="radio-group">
+            <label class="radio-option">
+                <input type="radio" name="cuisine" value="italian">
+                Italian
+            </label>
+            <label class="radio-option">
+                <input type="radio" name="cuisine" value="indian">
+                Indian
+            </label>
+            <label class="radio-option">
+                <input type="radio" name="cuisine" value="chinese">
+                Chinese
+            </label>
+            <label class="radio-option">
+                <input type="radio" name="cuisine" value="thai">
+                Thai
+            </label>
+            <label class="radio-option">
+                <input type="radio" name="cuisine" value="japanese">
+                Japanese
+            </label>
+            <label class="radio-option">
+                <input type="radio" name="cuisine" value="brg">
+                Gourmet Burgers
+            </label>
+            <button type="submit" class="next">Next</button>
+        </div>
+    </form>
+</div>
+
+<div id="step6" class="step active">
+    <h1>Activity 2</h1>
+    <p>KARAOKEEEEE ROOOOMMMMMMMMMMMM</p>
+    <p>I've included a little snippet of me singing so you can practice</p>
+    <p>If you are intimidated by my luscious and in-key vocals we can do a different activity</p>
+    <form method="post">
+        <div class="radio-group">
+            <label class="radio-option">
+                <input type="radio" name="activity" value="karaoke">
+                Karaoke
+            </label>
+            <label class="radio-option">
+                <input type="radio" name="activity" value="arcade">
+                Arcade
+            </label>
+            <label class="radio-option">
+                <input type="radio" name="activity" value="bowling">
+                Bowling
+            </label>
+            <label class="radio-option">
+                <input type="radio" name="activity" value="minigolf">
+                Minigolf
+            </label>
+            <label class="radio-option">
+                <input type="radio" name="activity" value="sipandpaint">
+                Sip and paint
+            </label>
+            <label class="radio-option">
+                <input type="radio" name="activity" value="axethrowing">
+                Axe Throwing
+            </label>
+            <label>
+                Add your own:
+                <input type="text" name="activity" placeholder="Activity">
+            </label>
+            <button type="submit" class="next">Next</button>
+        </div>
+    </form>
+</div>
+
                     <div id="step7" class="step">
                         <h1>Activity 3</h1>
                         <p>After lots of effort I'm sure you are keen for something sweet that isn't me</p></br>
