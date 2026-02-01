@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <script src="scripts/advanced.js" type="module" defer></script>
         <title>V Day PROPOSAL AHHHHHHH</title>
     </head>
     <body>
@@ -21,7 +22,7 @@
 
             <div class="maindiv">
                 <main>
-                    <div id="step1" class="step">
+                    <div id="step1" class="step active">
                         <h1>Question 1</h1>
                         <form method="post">
                             <ul>
@@ -30,7 +31,7 @@
                                     <input type="text" id="hername" name="her_name" placeholder="Your name">
                                 </li>
                             </ul>
-                            <button class="next" type="submit">Next</button></br>
+                            <button class="next" type="button">Next</button></br>
                         </form>
                     </div>
                     <div id="step2" class="step">
@@ -42,14 +43,41 @@
                                     <input type="text" id="myname" name="my_name" placeholder="Name">
                                 </li>
                             </ul>
-                            <button class="next" type="submit">Next</button></br>
+                            <button class="next" type="button">Next</button></br>
                         </form>
                     </div>
                     <div id="step3" class="step">
                         <h1>Time: </h1>
                         <p>6:00pm</p></br>
-                        <p>Picture of clock, some other valentines related stuff?</p>
+                        <img src="https://p7.hiclipart.com/preview/734/211/756/clock-face-digital-clock-clip-art-6-o-clock-cliparts.jpg">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI3xrrPbasUDrBmqvaKxfffEbfYvG11e9Mbg&s"><br>
+                        <button class="next">Next</button>
                     </div>
+                    <div id="stepattire" class="step">
+                        <h1>Attire</h1>
+                        <div class="radio-group">
+            <label class="radio-option">
+                <input type="radio" name="formal" value="formal">
+                Formal (I only have a tux)
+            </label>
+            <img src="https://media.istockphoto.com/id/873985780/vector/suit-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=RU9FXMVefy7AgIDXv50qhWfF_JpRG0OhwH3Ve3M1C4U=">
+            <label class="radio-option">
+                <input type="radio" name="casual" value="casual">
+                Casual (Like jeans + t-shirt for moi)
+            </label>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIiOIz3sk9CvNrUF-EIz60Il1JYnn1s8oIXA&s">
+            <label class="radio-option">
+                <input type="radio" name="dinner" value="flip">
+                Flip a coin!
+            </label>
+            <button type="button" class="next" id="btnattire">Next</button>
+        </div>
+                    </div>
+                    <div id="stepattirea" class="step" id="stepflip">
+    <img src="https://justflipacoin.com/img/share-a-coin.png"><br>
+    <button id="btnflip">Flip</button><br>
+    <p></p>
+</div>
                     <div id="step4" class="step">
     <h1>First Activity</h1>
     <p>DINNER!!!!!</p>
@@ -60,26 +88,31 @@
                 <input type="radio" name="dinner" value="yes">
                 Restaurant
             </label>
+            <img src="https://www.fairmontresort.com.au/wp-content/uploads/sites/120/2025/01/Embers-Grill-2200x1200.jpg">
             <label class="radio-option">
                 <input type="radio" name="dinner" value="no">
                 Homecooked
             </label>
+            <img src="https://www.staffingattiffanies.com/wp-content/uploads/2022/05/chef-in-restaurant-kitchen-cooking.jpg">
             <label class="radio-option">
                 <input type="radio" name="dinner" value="flip">
                 Flip a coin!
             </label>
-            <button type="submit" class="next">Next</button>
+            <button type="button" class="next" id="btndinnertype">Next</button>
         </div>
     </form>
 </div>
 
-<div id="step4a" class="step">
-    <p>ADD FLIPPING A COIN MECHANICS</p>
+<div id="step4a" class="step" id="stepflip">
+    <img src="https://justflipacoin.com/img/share-a-coin.png"><br>
+    <button id="btnflip">Flip</button><br>
+    <p></p>
 </div>
 
 <div id="step5" class="step">
     <h1>Cuisine of the most exquisite meal</h1>
     <p>I was thinking sushi but if that is not the vibe select an option</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8usUrU4524wv_DelZPLVfS2AAQV6AXU9-Sw&s">
     <form method="post">
         <div class="radio-group">
             <label class="radio-option">
@@ -106,7 +139,7 @@
                 <input type="radio" name="cuisine" value="brg">
                 Gourmet Burgers
             </label>
-            <button type="submit" class="next">Next</button>
+            <button type="button" class="next">Next</button>
         </div>
     </form>
 </div>
@@ -146,7 +179,7 @@
                 Add your own:
                 <input type="text" name="activity" placeholder="Activity">
             </label>
-            <button type="submit" class="next">Next</button>
+            <button type="button" class="next">Next</button>
         </div>
     </form>
 </div>
@@ -155,10 +188,11 @@
                         <h1>Activity 3</h1>
                         <p>After lots of effort I'm sure you are keen for something sweet that isn't me</p></br>
                         <p>I only know ice cream but if you know a good dessert place please tell me!</p></br>
+                        <p>Also we should probably get drinks somewhere as well</p><br>
                         <form method="post">
                             <label for="dess">HERE, type it HERE:</label>
                             <input type="text" id="dess" placeholder="Dessert Places">
-                            <button type="submit" class="next">Next</button>
+                            <button type="button" class="next">Next</button>
                         </form>
                     </div>
                     <div id="step8" class="step">
@@ -169,7 +203,7 @@
                             you have enjoyed the result of my boredom (also I hate web dev idk why i chose to do
                         it like this but whatevs)</p></br>
                         <form method="post">
-                            <button type="submit" class="next">Next</button>
+                            <button type="button" class="next">Next</button>
                         </form>
                     </div>
                     <div id="step9" class="step">
