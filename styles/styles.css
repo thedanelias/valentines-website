@@ -26,6 +26,18 @@ body {
     min-height: 100vh;
 }
 
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+}
+
+header li {
+    display: flex;
+    align-items: center;
+}
+
 /* Layout (I HATE THIS PART */
 .container {
     display: grid;

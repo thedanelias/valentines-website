@@ -48,49 +48,46 @@
                     </div>
                     <div id="step3" class="step">
                         <h1>Time: </h1>
-                        <p>6:00pm</p></br>
+                        <p>6:00pm</p><br>
                         <img src="https://p7.hiclipart.com/preview/734/211/756/clock-face-digital-clock-clip-art-6-o-clock-cliparts.jpg">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI3xrrPbasUDrBmqvaKxfffEbfYvG11e9Mbg&s"><br>
                         <button class="next">Next</button>
                     </div>
-                    <div id="stepattire" class="step">
+                    <div id="step4" class="step">
                         <h1>Attire</h1>
+                        <form method="post">
                         <div class="radio-group">
             <label class="radio-option">
-                <input type="radio" name="formal" value="formal">
+                <input type="radio" name="attire" value="formal">
                 Formal (I only have a tux)
             </label>
             <img src="https://media.istockphoto.com/id/873985780/vector/suit-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=RU9FXMVefy7AgIDXv50qhWfF_JpRG0OhwH3Ve3M1C4U=">
             <label class="radio-option">
-                <input type="radio" name="casual" value="casual">
+                <input type="radio" name="attire" value="casual">
                 Casual (Like jeans + t-shirt for moi)
             </label>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIiOIz3sk9CvNrUF-EIz60Il1JYnn1s8oIXA&s">
             <label class="radio-option">
-                <input type="radio" name="dinner" value="flip">
+                <input type="radio" name="attire" value="flip">
                 Flip a coin!
             </label>
             <button type="button" class="next" id="btnattire">Next</button>
+            </form>
         </div>
                     </div>
-                    <div id="stepattirea" class="step" id="stepflip">
-    <img src="https://justflipacoin.com/img/share-a-coin.png"><br>
-    <button id="btnflip">Flip</button><br>
-    <p></p>
-</div>
-                    <div id="step4" class="step">
+                    <div id="step5" class="step">
     <h1>First Activity</h1>
     <p>DINNER!!!!!</p>
     <p>NGL, I can't make my mind up whether to go to a restaurant or do a homecooked meal sort of thing sooo you can choose! (or we can flip a coin)</p>
     <form method="post">
         <div class="radio-group">
             <label class="radio-option">
-                <input type="radio" name="dinner" value="yes">
+                <input type="radio" name="dinner" value="restaurant">
                 Restaurant
             </label>
             <img src="https://www.fairmontresort.com.au/wp-content/uploads/sites/120/2025/01/Embers-Grill-2200x1200.jpg">
             <label class="radio-option">
-                <input type="radio" name="dinner" value="no">
+                <input type="radio" name="dinner" value="homecooked">
                 Homecooked
             </label>
             <img src="https://www.staffingattiffanies.com/wp-content/uploads/2022/05/chef-in-restaurant-kitchen-cooking.jpg">
@@ -103,13 +100,7 @@
     </form>
 </div>
 
-<div id="step4a" class="step" id="stepflip">
-    <img src="https://justflipacoin.com/img/share-a-coin.png"><br>
-    <button id="btnflip">Flip</button><br>
-    <p></p>
-</div>
-
-<div id="step5" class="step">
+<div id="step6" class="step">
     <h1>Cuisine of the most exquisite meal</h1>
     <p>I was thinking sushi but if that is not the vibe select an option</p>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8usUrU4524wv_DelZPLVfS2AAQV6AXU9-Sw&s">
@@ -139,12 +130,16 @@
                 <input type="radio" name="cuisine" value="brg">
                 Gourmet Burgers
             </label>
+            <label class="radio-option">
+                <input type="radio" name="cuisine" value="flip">
+                Flip a coin!
+            </label>
             <button type="button" class="next">Next</button>
         </div>
     </form>
 </div>
 
-<div id="step6" class="step">
+<div id="step7" class="step">
     <h1>Activity 2</h1>
     <p>KARAOKEEEEE ROOOOMMMMMMMMMMMM</p>
     <p>I've included a little snippet of me singing so you can practice</p>
@@ -177,36 +172,37 @@
             </label>
             <label>
                 Add your own:
-                <input type="text" name="activity" placeholder="Activity">
+                <input type="text" name="activity_custom" placeholder="Activity">
             </label>
             <button type="button" class="next">Next</button>
         </div>
     </form>
 </div>
 
-                    <div id="step7" class="step">
-                        <h1>Activity 3</h1>
-                        <p>After lots of effort I'm sure you are keen for something sweet that isn't me</p></br>
-                        <p>I only know ice cream but if you know a good dessert place please tell me!</p></br>
-                        <p>Also we should probably get drinks somewhere as well</p><br>
-                        <form method="post">
-                            <label for="dess">HERE, type it HERE:</label>
-                            <input type="text" id="dess" placeholder="Dessert Places">
-                            <button type="button" class="next">Next</button>
-                        </form>
-                    </div>
                     <div id="step8" class="step">
-                        <h1>Activity 4</h2>
-                        <p>To round off the night we shall migrate to Shadows, 
-                            where my friend is playing (all praise Vinuki)</p></br>
-                        <p>Not sure what else to say apart from I hope 
-                            you have enjoyed the result of my boredom (also I hate web dev idk why i chose to do
-                        it like this but whatevs)</p></br>
+                        <h1>Activity 3</h1>
+                        <p>After lots of effort I'm sure you are keen for something sweet that isn't me</p>
+                        <p>I only know ice cream but if you know a good dessert place please tell me!</p>
+                        <p>Also we should probably get drinks somewhere as well</p>
                         <form method="post">
+                            <label for="dess">HERE, type it HERE:
+                            <input type="text" id="dess" name="dessert" placeholder="Dessert Places">
+                            </label>
                             <button type="button" class="next">Next</button>
                         </form>
                     </div>
                     <div id="step9" class="step">
+                        <h1>Activity 4</h2>
+                        <p>To round off the night we shall migrate to Shadows, 
+                            where my friend is playing (all praise Vinuki)</p>
+                        <p>Not sure what else to say apart from I hope 
+                            you have enjoyed the result of my boredom (also I hate web dev idk why i chose to do
+                        it like this but whatevs)</p>
+                        <form method="post">
+                            <button type="button" class="next">Next</button>
+                        </form>
+                    </div>
+                    <div id="step10" class="step">
                         <h1>Hope you enjoyed this!</h1>
                         <h2>I kind of went insane in the heat but whatever</h2>
                         <h3>If you have any questions my instagram is at the top just click da link</h3>
