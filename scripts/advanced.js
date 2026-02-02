@@ -12,7 +12,7 @@ function nextStep() {
     steps[current].classList.add("active");
 };
 
-const buttons = document.querySelectorAll("button");
+const buttons = document.querySelectorAll("button.next");
 
 function randInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -128,12 +128,16 @@ buttons[5].addEventListener("click", () => {
         document.querySelector(`input[name="cuisine"][value="${options[num]}"]`).checked = true;
     }
     sendAnswers(current);
+    nothin.pause();
+    meSing.play();
     nextStep();
 })
 
 buttons[6].addEventListener("click", () => {
     const radio = isRadioSelected("activity");
     sendAnswers(current);
+    meSing.pause();
+    nothin.play();
     nextStep();
 })
 
@@ -145,3 +149,13 @@ buttons[7].addEventListener("click", () => {
 buttons[8].addEventListener("click", () => {
     nextStep();
 })
+
+const nothin = new Audio("audio/NothinOnYou.mp3");
+const meSing = new Audio("audio/Baby.mp3");
+
+function playMusic() {
+    nothin.play();
+    document.removeEventListener("click", playMusic);
+}
+
+document.addEventListener("click", playMusic);
